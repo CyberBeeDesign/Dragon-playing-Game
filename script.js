@@ -18,6 +18,7 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+
 const weapons = [
   {name: "stick", power: 5,}, 
   {name: "dagger", power: 30}, 
@@ -81,7 +82,10 @@ text: "You are in the town square. You see a sign that says \"Store\"."},
 
 
 // initialize buttons
-button1.onclick = goStore;
+button1.onclick = function() {
+  goStore();
+}
+
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
@@ -99,14 +103,17 @@ function update(location) {
 };
 
 function goTown() {
+  document.body.style.backgroundImage = "url(ressources/Town-square.webp)";
     update(locations[0]);
 };
   
 function goStore() {
+  document.body.style.backgroundImage = "url(ressources/Go-store.webp)"
     update(locations[1])
 };
   
 function goCave() {
+  document.body.style.backgroundImage = "url(ressources/Go-to-cave.webp)"
     update(locations[2])
 };
   
@@ -164,16 +171,19 @@ function sellWeapon() {
 };
 
 function fightSlime() {
+  document.body.style.backgroundImage = "url(ressources/slime.webp)"
     fighting = 0;
     goFight();
 };
 
 function fightBeast() {
+  document.body.style.backgroundImage = "url(ressources/beast.webp)"
     fighting = 1;
     goFight();
 };
 
 function fightDragon() {
+  document.body.style.backgroundImage = "url(ressources/dragon.webp)"
     fighting = 2;
     goFight();
 };
@@ -281,7 +291,6 @@ function pick(guess) {
     if (health <= 0) {
     lose();
   }
-
   }
 }
 
