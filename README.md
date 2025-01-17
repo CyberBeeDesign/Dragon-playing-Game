@@ -1,4 +1,5 @@
 # RPG - Dragon Repeller
+![4f3b19ce-4b04-4642-b7f0-97bf86860748](https://github.com/user-attachments/assets/bf5c2550-1a04-4124-b2c0-48b10e5d4ce5)
 
 ## Overview
 "Dragon Repeller" is a text-based RPG game where the player must defeat a dragon preventing people from leaving a town. The player can navigate different locations, battle monsters, and upgrade their stats and weapons.
